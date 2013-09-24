@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file is at /res/layout/list_item.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF"
+    android:orientation="vertical"
+    android:padding="2dp"
+    >
+
+    <ImageView
+        android:id="@+id/demo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:scaleType="centerCrop" >
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:orientation="horizontal"
+         >
+        
+        <TextView
+            android:id="@+id/row_image_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" 
+            android:textStyle="bold"
+            android:padding="0dp"/>
+        
+        <TextView
+        android:id="@+id/row_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="none"  
+android:maxLines="100"  
+android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" 
+        />
+
+        <ToggleButton
+            android:id="@+id/row_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/favorite_button_check"
+            android:focusable="false"
+            android:textOff=""
+            android:textOn="" 
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

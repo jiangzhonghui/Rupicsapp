@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/actionbar_background"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:padding="14dp"
+        >
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_48"
+            android:paddingLeft="16dp"
+            >
+        </ImageView>
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/app_name"
+            android:textSize="22sp" 
+            android:textColor="@color/actionbar_text"
+            android:gravity="left|center_vertical"
+            android:layout_weight="1">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/menuBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_btn_bg"
+            >
+        </ImageView>
+    </LinearLayout>
+        <fragment
+            android:id="@+id/categoryFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.yi4all.rupics.CategoryListFragment" />
+</LinearLayout>

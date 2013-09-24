@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFF"
+    android:gravity="left"
+    android:orientation="vertical" 
+    android:padding="10dp">
+
+    <LinearLayout
+                android:id="@+id/baseTable"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/round_rect_black_bg"
+                android:orientation="vertical"
+                android:padding="3dp"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/accountTitle"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/round_rect_bg"
+                android:orientation="vertical">
+
+
+                    <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/emailTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:layout_weight="1">
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="@string/password"
+                android:textColor="#000" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/passwordTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:password="true"
+                android:text="" 
+                android:layout_weight="1">
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:orientation="horizontal"
+                android:gravity="center">
+            <Button
+                android:id="@+id/saveBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save" 
+                android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/round_rect_orange_bg">
+            </Button>
+
+            <Button
+                android:id="@+id/getAccountBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/getAccount" 
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/round_rect_grey_bg">
+            </Button>
+            </LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:background="@drawable/round_rect_black_bg"
+                android:orientation="vertical"
+                android:padding="3dp"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/miscellaneous"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_rect_bg"
+                android:orientation="vertical" >
+
+                <CheckBox
+                android:id="@+id/hideImgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hideImgGallery"
+                android:textColor="@android:color/black"
+                 />
+    <CheckBox
+                android:id="@+id/onlyWifiChk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="@string/isOnlyWifi" />
+    <CheckBox
+                android:id="@+id/onScreenWhileSlideshowChk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="@string/onScreenWhileSlideshow" />
+            </LinearLayout>
+
+            </LinearLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file is at /res/layout/list_item.xml -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image_box_bg"
+    android:orientation="vertical"
+    android:paddingTop="5dp" 
+    android:paddingLeft="5dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="8dp">
+
+    <ImageView
+        android:id="@+id/demo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center" >
+    </ImageView>
+    
+    <TextView
+        android:id="@+id/row_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/category_background"
+        android:gravity="right|center_vertical"
+        android:layout_gravity="right|bottom"
+        android:scrollHorizontally="false"
+        android:textColor="@color/actionbar_text"
+        android:textSize="16sp" />
+    
+
+</FrameLayout>
