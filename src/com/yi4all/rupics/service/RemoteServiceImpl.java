@@ -39,8 +39,7 @@ public class RemoteServiceImpl implements IRemoteService {
 	public static IRemoteService getInstance() {
 		if (service == null) {
 
-			 service = new RemoteServiceImpl("http://10.52.5.20:9000/service");
-//			 service = new RemoteServiceImpl("http://rupics.herokuapp.com/service");
+			 service = new RemoteServiceImpl("http://[server.ip]:9000/service");
 		}
 		return service;
 	}
